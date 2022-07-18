@@ -1,0 +1,56 @@
+{
+  "testimonials": [
+    {
+      "message": "",
+      "colleague": "",
+      "image": ""
+    },
+    {
+      "message": "",
+      "colleague": "",
+      "image": ""
+    },
+    {
+      "message": "",
+      "colleague": "",
+      "image": ""
+    },
+    {
+      "message": "",
+      "colleague": "",
+      "image": ""
+    }
+  ],
+  "projects": [
+    {
+      "title": "Property Website",
+      "desc": "This app was created for users to view, sort and filter through property listings. It also allows for the admin to add, edit and delete listings",
+      "stack": "HTML/CSS/JS",
+      "objective": "CRUD javascript functions",
+      "img": "./assets/Property.png",
+      "img_alt": "propertywebsite",
+      "github": "https://github.com/Carlaamylawrence/realEstate",
+      "live": "https://findmeahouze.netlify.app"
+    },
+    {
+      "title": "To-do List app",
+      "desc": "I developed this app for users to create, sort and delete tasks as they are completed",
+      "stack": "HTML/CSS/JS",
+      "objective": "CRUD javascript functions",
+      "img": "./assets/Todo.png",
+      "img_alt": "todowebsite",
+      "github": "https://github.com/Carlaamylawrence/TODOLIST",
+      "live": "https://getitdonetodoapp.netlify.app"
+    },
+    {
+      "title": "BMI Calculator app",
+      "desc": "This app allows for users to calculate their bmi by inputing their height(cm) and weight(kg)",
+      "stack": "HTML/CSS/JS",
+      "objective": "MATH javascript functions",
+      "img": "./assets/bmiapp.png",
+      "img_alt": "bmiapp",
+      "github": "https://github.com/Carlaamylawrence/BMI-draft",
+      "live": "https://freebmichecker.netlify.app"
+    }
+  ]
+}

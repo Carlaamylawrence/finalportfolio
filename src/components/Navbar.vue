@@ -12,6 +12,7 @@
       </li>
     </ul>
   </nav>
+  <button id="toggler">Menu</button>
 </template>
 <script>
 export default {};
@@ -22,8 +23,10 @@ export default {};
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--color5);
-  padding: 20px;
+  background-color: black;
+}
+nav {
+  background-color: black;
 }
 
 .nav-links {
@@ -31,16 +34,18 @@ export default {};
   justify-content: center;
   gap: 20px;
   list-style-type: none;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .nav-link a {
-  color: var(--color1);
+  color: white;
   text-decoration: none;
   text-shadow: #cbe8ec 2px;
+  font-size: 2rem;
 }
 
 .nav-link a:hover {
-  color: var(--color3);
+  color: #cbe8ec;
 }
 
 #toggler {

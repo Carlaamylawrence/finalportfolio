@@ -40,9 +40,9 @@
         </div>
       </div>
     </div>
-    <!-- <div class="profile col-lg-5 d-flex ">
-                 <img src="./assests/landing image.png">
-                </div> -->
+    <!-- <div class="profile col-lg-5 d-flex">
+      <img src="../assets" />
+    </div> -->
   </section>
 </template>
 
@@ -51,12 +51,13 @@
 
 export default {};
 </script>
-<style>
+<style scoped>
 #landing {
   background: url(../assets/bgremoved.png);
   background-position: center;
   background-size: cover;
-  background-color: var(--color5);
+  background-color: black;
+  max-height: 75vh;
 }
 
 .profile {
@@ -66,8 +67,13 @@ export default {};
 }
 
 h1 {
-  color: var(--color3);
+  color: white;
   text-shadow: #cbe8ec 2px;
+}
+
+h3 {
+  color: #8fd8cc;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .title {
