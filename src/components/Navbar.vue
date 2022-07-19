@@ -1,5 +1,5 @@
 <template>
-  <nav id="nabar">
+  <nav id="navbar" :class="{ active: isActive }">
     <ul class="nav-links">
       <li class="nav-link"><router-link to="/">HOME</router-link></li>
       <li class="nav-link"><router-link to="/about">ABOUT</router-link></li>
@@ -12,10 +12,21 @@
       </li>
     </ul>
   </nav>
-  <button id="toggler">Menu</button>
+  <button id="toggler" @click="toggleNav()">menu</button>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      isActive: false,
+    };
+  },
+  methods: {
+    toggleNav() {
+      this.isActive = !this.isActive;
+    },
+  },
+};
 </script>
 <style>
 #navbar {
@@ -24,6 +35,7 @@ export default {};
   left: 0;
   width: 100%;
   background-color: black;
+  z-index: 2;
 }
 nav {
   background-color: black;
@@ -66,6 +78,7 @@ nav {
   #navbar {
     top: -110vh;
     transition: all 0.3s linear;
+    z-index: 50;
   }
 
   #navbar.active {
@@ -77,6 +90,7 @@ nav {
 
   #toggler {
     display: block;
+    z-index: 100;
   }
 }
 </style>

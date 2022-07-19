@@ -1,56 +1,92 @@
 {
   "testimonials": [
     {
-      "message": "",
-      "colleague": "",
-      "image": ""
+      "message": "In the short time that I have known Carla, she has continuously surprised and impressed me. Carla is a natural born leader and has quickly become someone that her peers look up to. Carla is also very dedicated, both to her colleagues as well as her studies.  Carla has proven to be an absolute powerhouse of talent and I cannot wait to see the heights to which she soars!",
+      "colleague": "Jason Wandrag - Lecturer",
+      "image": "https://postimg.cc/Wqp60sq7"
     },
     {
-      "message": "",
-      "colleague": "",
-      "image": ""
+      "message": "Carla Amy Lawrence is an excellent web developer. Carla is clearly focused on self progression, she is definitely not the type of person to associate her self with anything mediocre. Her kind personality combined with her determined work ethic makes her an absolute pleasure to have around in the work environment",
+      "colleague": "Jesse Spence - Colleague",
+      "image": "https://postimg.cc/GH2x2hCL"
     },
     {
-      "message": "",
-      "colleague": "",
-      "image": ""
+      "message": "Carla, busting with potential, great initiative and a great personality with a can do spirt. When responsibly comes her way she takes charge. Being elected as a team rep she has shown prowess in working in a team and communicating effectively to plan projects and events. A insider with a outside perspective, with those skills she would be a asset to any team and with her work ethic and drive she's assured for success",
+      "colleague": "Emile Van Wyk - Colleague",
+      "image": "https://postimg.cc/crbM8yxQ"
     },
     {
-      "message": "",
-      "colleague": "",
-      "image": ""
+      "message": "Carla is your go-to person when you're stuck with anything work related or in your personal life. Carla is a really awesome web developer. Her insight of both design and user experience really makes her such valuable team player. She indeed is an asset to any company or project.I feel honored to have worked beside her on many projects. Anything she creates always shows her passion for programming",
+      "colleague": "Ricardo Ronan - Colleague",
+      "image": "https://postimg.cc/MXtYqfg3"
     }
   ],
   "projects": [
     {
+      "id": 1,
       "title": "Property Website",
       "desc": "This app was created for users to view, sort and filter through property listings. It also allows for the admin to add, edit and delete listings",
-      "stack": "HTML/CSS/JS",
+      "stack": "JS",
       "objective": "CRUD javascript functions",
-      "img": "./assets/Property.png",
+      "img": "https://i.postimg.cc/3NPfg5nC/Property.png",
       "img_alt": "propertywebsite",
       "github": "https://github.com/Carlaamylawrence/realEstate",
       "live": "https://findmeahouze.netlify.app"
     },
     {
+      "id": 2,
       "title": "To-do List app",
       "desc": "I developed this app for users to create, sort and delete tasks as they are completed",
-      "stack": "HTML/CSS/JS",
+      "stack": "JS",
       "objective": "CRUD javascript functions",
-      "img": "./assets/Todo.png",
+      "img": "https://i.postimg.cc/4dx0G1Yt/Todo.png",
       "img_alt": "todowebsite",
       "github": "https://github.com/Carlaamylawrence/TODOLIST",
       "live": "https://getitdonetodoapp.netlify.app"
     },
     {
+      "id": 3,
       "title": "BMI Calculator app",
       "desc": "This app allows for users to calculate their bmi by inputing their height(cm) and weight(kg)",
-      "stack": "HTML/CSS/JS",
+      "stack": "JS",
       "objective": "MATH javascript functions",
-      "img": "./assets/bmiapp.png",
+      "img": "https://i.postimg.cc/fRYpfy43/bmiapp.png",
       "img_alt": "bmiapp",
       "github": "https://github.com/Carlaamylawrence/BMI-draft",
       "live": "https://freebmichecker.netlify.app"
+    },
+    {
+      "id": 4,
+      "title": "Calculator app",
+      "desc": "A user friendly calculator app for basic mathematic sums with a text color change feature",
+      "stack": "JS",
+      "objective": "MATH javascript functions",
+      "img": "https://i.postimg.cc/N0YVJtYd/calculator-app.png",
+      "img_alt": "calculatorapp",
+      "github": "https://github.com/Carlaamylawrence/Calculator",
+      "live": "https://retrocalculator.netlify.app"
+    },
+    {
+      "id": 5,
+      "title": "Temperature Convertor app",
+      "desc": "This user friendly app is able to convert Farenheit to celsius degreess and vice versa",
+      "stack": "JS",
+      "objective": "MATH javascript functions",
+      "img": "https://i.postimg.cc/cJmzPzL0/tempapp.png",
+      "img_alt": "tempapp",
+      "github": "https://github.com/Carlaamylawrence/tempconverter",
+      "live": "https://freetempconverter.netlify.app"
+    },
+    {
+      "id": 6,
+      "title": "Gym landing page",
+      "desc": "A single landing page for a gym that incorporates Bootstrap for styling",
+      "stack": "CSS",
+      "objective": "Web design",
+      "img": "https://i.postimg.cc/FzfndsgH/gymweb.png",
+      "img_alt": "gympwebsite",
+      "github": "https://github.com/Carlaamylawrence/gym",
+      "live": "https://hugegym.netlify.app"
     }
   ]
 }

@@ -1,0 +1,129 @@
+<template>
+  <div class="container mt-5 p-5">
+    <div
+      class="projectDisplay row d-flex flex-wrap justify-content-center"
+      v-if="filteredProjects"
+    >
+      <div class="section-title">
+        <h1>PROJECTS</h1>
+        <h4>PREVIOUS WORK THAT I AM PROUD OF</h4>
+      </div>
+      <select v-model="stack" class="ms-3">
+        <option value="all">All</option>
+        <option value="CSS">CSS</option>
+        <option value="JS">Javascript</option>
+        <option value="Vue">Vue</option>
+      </select>
+
+      <ProjectCard
+        v-for="project of filteredProjects"
+        :key="project.id"
+        :project="project"
+      />
+    </div>
+  </div>
+</template>
+<script>
+import ProjectCard from "../components/ProjectCard.vue";
+export default {
+  props: ["id"],
+  computed: {
+    filteredProjects() {
+      return this.projects.filter((project) => {
+        let isMatch = true;
+        if (this.stack !== "all" && project.stack !== this.stack)
+          isMatch = false;
+        return isMatch;
+      });
+    },
+  },
+  components: { ProjectCard },
+  data() {
+    return {
+      projects: [
+        {
+          id: 1,
+          title: "Property Website",
+          desc: "This app was created for users to view, sort and filter through property listings. It also allows for the admin to add, edit and delete listings",
+          stack: "JS",
+          objective: "CRUD javascript functions",
+          img: "https://i.postimg.cc/3NPfg5nC/Property.png",
+          img_alt: "propertywebsite",
+          github: "https://github.com/Carlaamylawrence/realEstate",
+          live: "https://findmeahouze.netlify.app",
+        },
+        {
+          id: 2,
+          title: "To-do List app",
+          desc: "I developed this app for users to create, sort and delete tasks as they are completed",
+          stack: "JS",
+          objective: "CRUD javascript functions",
+          img: "https://i.postimg.cc/4dx0G1Yt/Todo.png",
+          img_alt: "todowebsite",
+          github: "https://github.com/Carlaamylawrence/TODOLIST",
+          live: "https://getitdonetodoapp.netlify.app",
+        },
+        {
+          id: 3,
+          title: "BMI Calculator app",
+          desc: "This app allows for users to calculate their bmi by inputing their height(cm) and weight(kg)",
+          stack: "JS",
+          objective: "MATH javascript functions",
+          img: "https://i.postimg.cc/fRYpfy43/bmiapp.png",
+          img_alt: "bmiapp",
+          github: "https://github.com/Carlaamylawrence/BMI-draft",
+          live: "https://freebmichecker.netlify.app",
+        },
+        {
+          id: 4,
+          title: "Calculator app",
+          desc: "A user friendly calculator app for basic mathematic sums with a text color change feature",
+          stack: "JS",
+          objective: "MATH javascript functions",
+          img: "https://i.postimg.cc/N0YVJtYd/calculator-app.png",
+          img_alt: "calculatorapp",
+          github: "https://github.com/Carlaamylawrence/Calculator",
+          live: "https://retrocalculator.netlify.app",
+        },
+        {
+          id: 5,
+          title: "Temperature Convertor app",
+          desc: "This user friendly app is able to convert Farenheit to celsius degreess and vice versa",
+          stack: "JS",
+          objective: "MATH javascript functions",
+          img: "https://i.postimg.cc/cJmzPzL0/tempapp.png",
+          img_alt: "tempapp",
+          github: "https://github.com/Carlaamylawrence/tempconverter",
+          live: "https://freetempconverter.netlify.app",
+        },
+        {
+          id: 6,
+          title: "Gym landing page",
+          desc: "A single landing page for a gym that incorporates Bootstrap for styling",
+          stack: "CSS",
+          objective: "Web design",
+          img: "https://i.postimg.cc/FzfndsgH/gymweb.png",
+          img_alt: "gympwebsite",
+          github: "https://github.com/Carlaamylawrence/gym",
+          live: "https://hugegym.netlify.app",
+        },
+      ],
+      stack: "all",
+    };
+  },
+};
+</script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+  background-color: black;
+}
+</style>

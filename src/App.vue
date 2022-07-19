@@ -23,5 +23,19 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
   background-color: black;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #75dab4;
+  font-family: "Fjalla One", sans-serif;
+}
+h4 {
+  color: #75dab4;
+  font-family: "Fjalla One", sans-serif;
+}
+h3 {
+  color: #75dab4;
+  font-family: "Fjalla One", sans-serif;
 }
 </style>

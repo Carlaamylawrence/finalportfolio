@@ -52,12 +52,19 @@
 export default {};
 </script>
 <style scoped>
+body {
+  background-color: black;
+}
 #landing {
-  background: url(../assets/bgremoved.png);
+  background: url(https://i.postimg.cc/jqXtLjcc/bgremoved.png);
   background-position: center;
   background-size: cover;
+  object-fit: fill;
   background-color: black;
-  max-height: 75vh;
+  max-height: 100vh;
+}
+.container {
+  height: 90vh;
 }
 
 .profile {
