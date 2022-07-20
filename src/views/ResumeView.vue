@@ -1,16 +1,26 @@
 <template>
   <!-- RESUME -->
   <div id="timeline" class="container mt-5 p-5">
-    <h2>EDUCATION AND WORK EXPERIENCE</h2>
-    <ResumeCard
-      v-for="resume of experience"
-      :key="resume.title"
-      :resume="resume"
-    />
+    <div
+      class="section-title d-flex flex-column justify-content-center align-items-center mb-2"
+    >
+      <h1 class="">EDUCATION AND WORK EXPERIENCE</h1>
+      <h3>DITCHED BACTERIA FOR BUGS</h3>
+      <a href="../assets/cv/cv.pdf" download="cv PDF"
+        ><button class="btn btn-outline-light">DOWNLOAD CV</button></a
+      >
+    </div>
+    <div class="experiences">
+      <ResumeCard
+        v-for="resume of experience"
+        :key="resume.title"
+        :resume="resume"
+      />
+    </div>
   </div>
 
   <!-- TESTIMONIALS -->
-  <div id="testimonials" class="container mt-5 p-5">
+  <div id="testimonials" class="container mt-3 p-5">
     <div
       class="section-title d-flex flex-column justify-content-center align-items-center mb-2"
     >
@@ -18,7 +28,7 @@
       <h3>WHAT OTHERS HAVE SAID ABOUT ME</h3>
     </div>
     <div id="card-holder" class="row justify-content-evenly">
-      <div class="card col-md-3 p-3">
+      <div class="card col-md-3 p-3 d-flex justify-content-between mt-2">
         <div class="testimonial image d-flex justify-content-center pb-2">
           <img
             src="https://i.postimg.cc/TwGvGPPz/2021-team-jason-wandrag.jpg"
@@ -40,7 +50,7 @@
           Jason Wandrag - Lecturer
         </h5>
       </div>
-      <div class="card col-md-3 p-3">
+      <div class="card col-md-3 p-3 d-flex justify-content-between mt-2">
         <div class="testimonial image d-flex justify-content-center pb-2">
           <img
             src="https://i.postimg.cc/bw27tnSX/Jesse-2.jpg"
@@ -61,7 +71,7 @@
           Jesse Spence - Colleague
         </h5>
       </div>
-      <div class="card col-md-3 p-3">
+      <div class="card col-md-3 p-3 d-flex justify-content-between mt-2">
         <div class="testimonial image d-flex justify-content-center pb-2">
           <img
             src="https://i.postimg.cc/zfZ9SfTy/Emile.jpg"
@@ -96,14 +106,11 @@ export default {
         {
           header: "MARCH 2022 -CURRENT",
           title: "Life Choices Academy",
-          role: "Fullstack web developer intern",
+          role: "FULLSTACK DEVELOPER INTERN",
           description:
-            "an organisation that aims to rectify inequality to disadvantaged youth by empowering them through a six month web development bootcamp",
+            "An organisation that aims to rectify inequality to disadvantaged youth by empowering them through a six month web development bootcamp",
           heading: "What I learnt:",
-          list: [
-            "Learnt Front-end styling frameworks and manipulations",
-            "Styling with CSS and Bootsrap, Coding webpages using HTML. ",
-          ],
+          list: "Learnt Front-end styling frameworks,manipulations styling with CSS and Bootsrap, Coding webpages using HTML. ",
         },
         {
           header: "Feb 2017-November 2021",
@@ -112,11 +119,7 @@ export default {
           description:
             "Both theory and practical based learning about the wonderful world at a microscpic level.",
           heading: "Modules taken:",
-          list: [
-            "Biochemistry, Microbiology and Bioinformatics",
-            "Mathematics and Statistics",
-            "Plant, food and Industrical Biotechnology",
-          ],
+          list: "Biochemistry, Microbiology, Bioinformatics, Mathematics, Statistics,  Plant, food and Industrical Biotechnology",
         },
         {
           header: "JUNE 2020 - OCTOBER 2020",
@@ -125,11 +128,7 @@ export default {
           description:
             "I worked for a massive global eCommerce website within the customer service branch",
           heading: "My Responsibilities:",
-          list: [
-            "Solved customer queries expeditiously",
-            "Empathetic listener and persuasive speaker towards customers",
-            "Commended by management for efficiency and professionalism ",
-          ],
+          list: "Solved customer queries expeditiously // Empathetic listener and persuasive speaker towards customers //Commended by management for efficiency and professionalism ",
         },
         {
           header: "JUNE 2016-JANUARY 2020",
@@ -138,11 +137,7 @@ export default {
           description:
             "A software developer house based in Rondebosch where I worked in a relief role when needed.",
           heading: "What I learnt:",
-          list: [
-            "Managed a switchboard and mailing system",
-            "Filing of invoices",
-            "Stock control and product logistics",
-          ],
+          list: "Managed a switchboard and mailing system // Filing of invoices // Stock control and product logistics",
         },
       ],
     };
@@ -170,5 +165,35 @@ h5 {
 .card:hover {
   transform: scale();
   box-shadow: #75dab4 2px 1px 8px;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+}
+.experiences .resume-card {
+  width: 50%;
+  padding: 10px;
+  color: white;
+}
+.experiences .resume-card:nth-child(odd) {
+  text-align: end;
+}
+.experiences .resume-card:nth-child(even) {
+  align-self: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .experiences .resume-card {
+    width: 100%;
+    padding: 10px;
+    color: white;
+  }
+  .experiences .resume-card:nth-child(odd) {
+    text-align: center;
+  }
+  .experiences .resume-card:nth-child(even) {
+    text-align: center;
+  }
 }
 </style>

@@ -38,4 +38,8 @@ h3 {
   color: #75dab4;
   font-family: "Fjalla One", sans-serif;
 }
+h5 {
+  color: #75dab4;
+  font-family: "Fjalla One", sans-serif;
+}
 </style>

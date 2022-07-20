@@ -46,7 +46,7 @@ nav {
   justify-content: center;
   gap: 20px;
   list-style-type: none;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Fjalla One", sans-serif;
 }
 
 .nav-link a {
