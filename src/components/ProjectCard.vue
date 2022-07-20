@@ -1,6 +1,6 @@
 <template>
   <div class="card col-lg-5 col-md-3 flex-shrink-1 m-4">
-    <img class v-bind:src="project.img" />
+    <img v-bind:src="project.img" />
     <div
       class="title d-flex justify-content-center align-items-center text-light"
     >

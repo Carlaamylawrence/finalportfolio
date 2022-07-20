@@ -1,8 +1,11 @@
 <template>
-  <div class="card">
-    <p>{{ resume.title }}</p>
+  <div class="resume-card">
     <p>{{ resume.header }}</p>
-    <p></p>
+    <p>{{ resume.title }}</p>
+    <p>{{ resume.role }}</p>
+    <p>{{ resume.description }}</p>
+    <p>{{ resume.heading }}</p>
+    <p>{{ resume.list }}</p>
   </div>
 </template>
 <script>

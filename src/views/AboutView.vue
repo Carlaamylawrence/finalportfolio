@@ -49,29 +49,85 @@
         <div
           class="skills-display row d-flex justify-content-center align-items-center"
         >
-          <div class="skills-info col-md-3 g-3">
-            <i class="fa-brands fa-html5"></i>
+          <div class="skills-info card-container col-md-3 g-3">
+            <div class="card">
+              <div class="front">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="back">
+                <h4>HTML</h4>
+              </div>
+            </div>
           </div>
-          <div class="skills-info col-md-3 g-3">
-            <i class="fa-brands fa-css3-alt"></i>
+          <div class="skills-info card-container col-md-3 g-3">
+            <div class="card">
+              <div class="front">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="back">
+                <h4>CSS</h4>
+              </div>
+            </div>
           </div>
-          <div class="skills-info col-md-3 g-3">
-            <i class="fa-brands fa-bootstrap"></i>
+          <div class="skills-info card-container col-md-3 g-3">
+            <div class="card">
+              <div class="front">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <div class="back">
+                <h4>BOOTSTRAP</h4>
+              </div>
+            </div>
           </div>
-          <div class="skills-info col-md-3 g-3">
-            <i class="fa-brands fa-js-square"></i>
+          <div class="skills-info card-container col-md-3 g-3">
+            <div class="card">
+              <div class="front">
+                <i class="fa-brands fa-js-square"></i>
+              </div>
+              <div class="back">
+                <h4>JAVASCRIPT</h4>
+              </div>
+            </div>
           </div>
-          <div class="skills-info col-md-3 g-3">
-            <i class="fa-brands fa-vuejs"></i>
+          <div class="skills-info card-container col-md-3 g-3">
+            <div class="card">
+              <div class="front">
+                <i class="fa-brands fa-vuejs"></i>
+              </div>
+              <div class="back">
+                <h4>VUE.JS</h4>
+              </div>
+            </div>
           </div>
-          <div class="skills-info col-md-3 g-3">
-            <i class="fa-brands fa-node-js"></i>
+          <div class="skills-info card-container col-md-3 g-3">
+            <div class="card">
+              <div class="front">
+                <i class="fa-brands fa-node-js"></i>
+              </div>
+              <div class="back">
+                <h4>NODE.JS</h4>
+              </div>
+            </div>
           </div>
-          <div class="skills-info col-md-3 g-3">
-            <i class="fa-brands fa-solid fa-database"></i>
+          <div class="skills-info card-container col-md-3 g-3">
+            <div class="card">
+              <div class="front">
+                <i class="fa-brands fa-solid fa-database"></i>
+              </div>
+              <div class="back">
+                <h4>MySQL</h4>
+              </div>
+            </div>
           </div>
-          <div class="skills-info col-md-3 g-3">
-            <i class="fa-brands fa-git-alt"></i>
+          <div class="skills-info card-container col-md-3 g-3">
+            <div class="card">
+              <div class="front">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <div class="back">
+                <h4>GIT</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -84,15 +140,54 @@ body {
 }
 p {
   color: white;
+  text-align: justify;
+  text-justify: inter-word;
 }
-.tech {
+.card {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+  background: #000000;
+  top: 0;
+  left: 0;
+  width: 102px;
+  height: 102px;
+  border-radius: 5px;
+  color: rgb(39, 39, 39);
+  /* box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+    0 17px 17px 0 rgba(0, 0, 0, 0.15); */
+  backface-visibility: hidden;
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.back {
+  transform: rotateY(180deg);
 }
 .fa-brands {
   font-size: 4rem;
-}
-.fa-brands:hover {
-  transform: skewX(10deg);
-  transition: 2s;
-  transition: smooth;
 }
 </style>
