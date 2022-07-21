@@ -113,7 +113,7 @@ export default {
           list: "Learnt Front-end styling frameworks,manipulations styling with CSS and Bootsrap, Coding webpages using HTML. ",
         },
         {
-          header: "Feb 2017-November 2021",
+          header: "FEB 2017-NOVEMBER 2021",
           title: "The University of the Western Cape",
           role: "BSc BIOTECHNOLOGY GRADUATE",
           description:
@@ -140,6 +140,7 @@ export default {
           list: "Managed a switchboard and mailing system // Filing of invoices // Stock control and product logistics",
         },
       ],
+      testimonials: [{}],
     };
   },
 
@@ -147,9 +148,6 @@ export default {
 };
 </script>
 <style scoped>
-body {
-  background-color: black;
-}
 p {
   color: white;
   text-align: justify;

@@ -136,10 +136,10 @@
 </template>
 <style scoped>
 body {
-  background-color: black;
+  background-color: var(--background-color);
 }
 p {
-  color: white;
+  color: var(--color1);
   text-align: justify;
   text-justify: inter-word;
 }
@@ -154,7 +154,7 @@ p {
 .front,
 .back {
   position: absolute;
-  background: #000000;
+  background: var(--background-color);
   top: 0;
   left: 0;
   width: 102px;

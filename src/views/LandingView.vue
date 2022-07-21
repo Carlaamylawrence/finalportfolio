@@ -3,7 +3,7 @@
     <div class="container p-5 d-flex flex-column col-lg-7">
       <div class="title m-5">
         <h1>CARLA AMY LAWRENCE</h1>
-        <h3>NEED A WEB DEVELOPER?</h3>
+        <h3 class="subtitle">NEED A WEB DEVELOPER?</h3>
         <div class="wrapper text-center d-flex">
           <a
             href="https://www.linkedin.com/in/carla-amy-lawrence-807277225/"
@@ -52,16 +52,19 @@
 export default {};
 </script>
 <style scoped>
-body {
-  background-color: black;
-}
-#landing {
+/* #landing {
   background: url(https://i.postimg.cc/jqXtLjcc/bgremoved.png);
   background-position: center;
   background-size: cover;
   object-fit: fill;
   background-color: black;
   max-height: 100vh;
+} */
+#landing {
+  background: linear-gradient(0deg, rgb(54 54 54 / 38%), rgb(20 20 20 / 43%)),
+    url(../assets/land4.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .container {
   height: 90vh;
@@ -73,12 +76,7 @@ body {
   margin-top: 2rem;
 }
 
-h1 {
-  color: white;
-  text-shadow: #cbe8ec 2px;
-}
-
-h3 {
+.subtitle {
   color: #8fd8cc;
   font-family: "Barlow Condensed", sans-serif;
 }

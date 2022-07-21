@@ -10,6 +10,9 @@
       <li class="nav-link">
         <router-link to="/contact">CONTACT</router-link>
       </li>
+      <li>
+        <button @click="changeTheme"><i class="fa-solid fa-moon"></i></button>
+      </li>
     </ul>
   </nav>
   <button id="toggler" @click="toggleNav()">menu</button>
@@ -19,11 +22,24 @@ export default {
   data() {
     return {
       isActive: false,
+      dark: false,
+      color: "#fffefe",
     };
   },
   methods: {
     toggleNav() {
       this.isActive = !this.isActive;
+    },
+    changeTheme() {
+      let cssVariables = document.querySelector(":root");
+      this.dark = !this.dark;
+      if (this.dark) {
+        cssVariables.style.setProperty("--background-color", "#222");
+        cssVariables.style.setProperty("--color1", "#fffefe");
+      } else {
+        cssVariables.style.setProperty("--background-color", "#fffefe");
+        cssVariables.style.setProperty("--color3", "#222");
+      }
     },
   },
 };
@@ -34,11 +50,11 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: black;
+  background-color: var(--background-color);
   z-index: 2;
 }
 nav {
-  background-color: black;
+  background-color: var(--background-color);
 }
 
 .nav-links {
@@ -50,7 +66,7 @@ nav {
 }
 
 .nav-link a {
-  color: white;
+  color: var(--color2);
   text-decoration: none;
   text-shadow: #cbe8ec 2px;
   font-size: 2rem;
