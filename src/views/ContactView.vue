@@ -1,6 +1,12 @@
 <template>
   <section id="contact">
     <div class="container-fluid p-5">
+      <div class="heading d-flex justify-content-center mt-5">
+        <div class="section-title">
+          <h1 class="main-title">CONTACT</h1>
+          <h4 class="subtitle">LET"S CONNECT</h4>
+        </div>
+      </div>
       <div class="contact container-fluid shadow-sm m-4 p-5 pb-5">
         <div class="row d-flex flex-wrap justify-content-between">
           <div class="col-lg-6">

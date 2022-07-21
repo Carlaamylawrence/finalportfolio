@@ -1,8 +1,11 @@
 <template>
-  <section id="about ">
+  <section id="about " class="p-5">
     <div class="container-fluid mt-5 p-5">
-      <div class="section-title">
-        <h1>ABOUT</h1>
+      <div class="heading d-flex justify-content-center">
+        <div class="section-title">
+          <h1 class="main-title">ABOUT</h1>
+          <h4 class="subtitle">DITCHED BACTERIA FOR BUGS</h4>
+        </div>
       </div>
       <div class="about-container row">
         <div class="profile col-lg-4">
@@ -41,10 +44,29 @@
           </div>
         </div>
       </div>
+      <div class="skillset d-flex justify-content-center">
+        <div
+          class="designcards d-flex flex-column justify-content-center align-content-center"
+        >
+          <div class="design-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <div class="design-text"></div>
+        </div>
+        <div
+          class="designcards d-flex flex-column justify-content-center align-content-center"
+        >
+          <div class="design-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="design-text"></div>
+        </div>
+        <div
+          class="designcards d-flex flex-column justify-content-center align-content-center"
+        >
+          <div class="design-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <div class="design-text"></div>
+        </div>
+      </div>
       <div class="skills-container">
         <div class="skills-title">
           <h1>SKILLS</h1>
-          <p></p>
         </div>
         <div
           class="skills-display row d-flex justify-content-center align-items-center"
@@ -181,5 +203,10 @@
 }
 .fa-brands {
   font-size: 4rem;
+}
+
+.designcards {
+  height: 200px;
+  width: 200px;
 }
 </style>

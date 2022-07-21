@@ -21,6 +21,14 @@
   <button id="toggler" @click="toggleNav()">menu</button>
 </template>
 <script>
+setInterval(() => {
+  if (window.scrollY != 0) {
+    //user scrolled to the top of the page
+    document.querySelector("#navbar").classList.add("solid");
+  } else {
+    document.querySelector("#navbar").classList.remove("solid");
+  }
+}, 100);
 export default {
   data() {
     return {
@@ -39,9 +47,11 @@ export default {
       if (this.dark) {
         cssVariables.style.setProperty("--background-color", "#222");
         cssVariables.style.setProperty("--color1", "#fffefe");
+        cssVariables.style.setProperty("--color3", "#fffefe");
       } else {
         cssVariables.style.setProperty("--background-color", "#fffefe");
         cssVariables.style.setProperty("--color1", "#222");
+        cssVariables.style.setProperty("--color3", "#222");
       }
     },
   },
@@ -55,7 +65,11 @@ export default {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   /* background-color: var(--background-color); */
-  z-index: 2;
+  z-index: 200;
+  transition: all 0.3s linear;
+}
+#navbar.solid {
+  background-color: rgba(255, 255, 255, 1);
 }
 nav {
   background-color: rgba(255, 255, 255, 0.5);
@@ -108,6 +122,10 @@ nav {
 
   #navbar.active {
     top: 0;
+  }
+  #navbar.active,
+  nav {
+    background-color: black;
   }
   .wrapper {
     display: none;

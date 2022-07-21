@@ -4,16 +4,20 @@
       class="projectDisplay row d-flex flex-wrap justify-content-center"
       v-if="filteredProjects"
     >
-      <div class="section-title">
-        <h1>PROJECTS</h1>
-        <h4>PREVIOUS WORK THAT I AM PROUD OF</h4>
+      <div class="heading d-flex justify-content-center">
+        <div class="section-title">
+          <h1 class="main-title">PROJECTS</h1>
+          <h4 class="subtitle">A GLIMPSE AT MY WORK</h4>
+        </div>
       </div>
-      <select v-model="stack" class="ms-3">
-        <option value="all">All</option>
-        <option value="CSS">CSS</option>
-        <option value="JS">Javascript</option>
-        <option value="Vue">Vue</option>
-      </select>
+      <div class="filter d-flex justify-content-center">
+        <form>
+          <input v-model="stack" type="radio" value="all" />ALL
+          <input v-model="stack" type="radio" value="CSS" />CSS
+          <input v-model="stack" type="radio" value="JS" />JAVASCRIPT
+          <input v-model="stack" type="radio" value="Vue" />VUE
+        </form>
+      </div>
 
       <ProjectCard
         v-for="project of filteredProjects"

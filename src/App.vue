@@ -44,4 +44,32 @@ h5 {
   color: var(--color2);
   font-family: "Fjalla One", sans-serif;
 }
+.main-title {
+  font-size: 8rem;
+  z-index: 2;
+  color: var(--color3);
+  text-shadow: 0px 0px 2px black;
+}
+.section-title {
+  position: relative;
+  width: fit-content;
+  color: var(--color2);
+  /* mix-blend-mode: difference; */
+}
+
+.subtitle {
+  position: absolute;
+  white-space: nowrap;
+  text-shadow: 0px 0px 2px rgb(150, 149, 149);
+  top: 50%;
+  left: 70%;
+  margin: 0;
+  z-index: 3;
+  transform: translatey(-50%);
+  /*   background: white; */
+  padding: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+}
 </style>
