@@ -11,7 +11,10 @@
         <router-link to="/contact">CONTACT</router-link>
       </li>
       <li>
-        <button @click="changeTheme"><i class="fa-solid fa-moon"></i></button>
+        <i
+          class="dark d-flex align-content-center fa-solid fa-moon"
+          @click="changeTheme"
+        ></i>
       </li>
     </ul>
   </nav>
@@ -38,7 +41,7 @@ export default {
         cssVariables.style.setProperty("--color1", "#fffefe");
       } else {
         cssVariables.style.setProperty("--background-color", "#fffefe");
-        cssVariables.style.setProperty("--color3", "#222");
+        cssVariables.style.setProperty("--color1", "#222");
       }
     },
   },
@@ -50,11 +53,12 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: var(--background-color); */
   z-index: 2;
 }
 nav {
-  background-color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-links {
@@ -68,12 +72,17 @@ nav {
 .nav-link a {
   color: var(--color2);
   text-decoration: none;
-  text-shadow: #cbe8ec 2px;
+  text-shadow: #cbe8ec 1px 2px;
   font-size: 2rem;
 }
 
-.nav-link a:hover {
+.nav-link a:hover,
+.dark:hover {
   color: #cbe8ec;
+}
+
+.dark {
+  border: none;
 }
 
 #toggler {

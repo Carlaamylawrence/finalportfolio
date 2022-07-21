@@ -49,8 +49,8 @@
         <div
           class="skills-display row d-flex justify-content-center align-items-center"
         >
-          <div class="skills-info card-container col-md-3 g-3">
-            <div class="card">
+          <div class="skills-info aboutCard-container col-md-3 g-3">
+            <div class="aboutCard">
               <div class="front">
                 <i class="fa-brands fa-html5"></i>
               </div>
@@ -59,8 +59,8 @@
               </div>
             </div>
           </div>
-          <div class="skills-info card-container col-md-3 g-3">
-            <div class="card">
+          <div class="skills-info aboutCard-container col-md-3 g-3">
+            <div class="aboutCard">
               <div class="front">
                 <i class="fa-brands fa-css3-alt"></i>
               </div>
@@ -69,8 +69,8 @@
               </div>
             </div>
           </div>
-          <div class="skills-info card-container col-md-3 g-3">
-            <div class="card">
+          <div class="skills-info aboutCard-container col-md-3 g-3">
+            <div class="aboutCard">
               <div class="front">
                 <i class="fa-brands fa-bootstrap"></i>
               </div>
@@ -79,8 +79,8 @@
               </div>
             </div>
           </div>
-          <div class="skills-info card-container col-md-3 g-3">
-            <div class="card">
+          <div class="skills-info aboutCard-container col-md-3 g-3">
+            <div class="aboutCard">
               <div class="front">
                 <i class="fa-brands fa-js-square"></i>
               </div>
@@ -89,8 +89,8 @@
               </div>
             </div>
           </div>
-          <div class="skills-info card-container col-md-3 g-3">
-            <div class="card">
+          <div class="skills-info aboutCard-container col-md-3 g-3">
+            <div class="aboutCard">
               <div class="front">
                 <i class="fa-brands fa-vuejs"></i>
               </div>
@@ -99,8 +99,8 @@
               </div>
             </div>
           </div>
-          <div class="skills-info card-container col-md-3 g-3">
-            <div class="card">
+          <div class="skills-info aboutCard-container col-md-3 g-3">
+            <div class="aboutCard">
               <div class="front">
                 <i class="fa-brands fa-node-js"></i>
               </div>
@@ -109,8 +109,8 @@
               </div>
             </div>
           </div>
-          <div class="skills-info card-container col-md-3 g-3">
-            <div class="card">
+          <div class="skills-info aboutCard-container col-md-3 g-3">
+            <div class="aboutCard">
               <div class="front">
                 <i class="fa-brands fa-solid fa-database"></i>
               </div>
@@ -119,8 +119,8 @@
               </div>
             </div>
           </div>
-          <div class="skills-info card-container col-md-3 g-3">
-            <div class="card">
+          <div class="skills-info aboutCard-container col-md-3 g-3">
+            <div class="aboutCard">
               <div class="front">
                 <i class="fa-brands fa-git-alt"></i>
               </div>
@@ -134,16 +134,8 @@
     </div>
   </section>
 </template>
-<style scoped>
-body {
-  background-color: var(--background-color);
-}
-p {
-  color: var(--color1);
-  text-align: justify;
-  text-justify: inter-word;
-}
-.card {
+<style>
+.aboutCard {
   position: relative;
   width: 100px;
   height: 100px;
@@ -180,7 +172,7 @@ p {
   font-size: 18px;
 }
 
-.card-container:hover .card {
+.aboutCard-container:hover .aboutCard {
   transform: rotateY(180deg);
 }
 

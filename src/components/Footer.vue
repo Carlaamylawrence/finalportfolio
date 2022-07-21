@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" class="bg-dark text-light">
+  <footer id="footer" class="text-light">
     <div class="container-fluid p-2">
       <div class="footer-text pb-3">
         <h3>LET'S TALK ABOUT YOUR PROJECT</h3>
@@ -35,9 +35,11 @@ export default {};
   color: black;
 } */
 #footer {
+  background-color: var(--background-color);
   position: fixed;
   bottom: 0;
   height: 100px;
   width: 100%;
+  z-index: 10;
 }
 </style>

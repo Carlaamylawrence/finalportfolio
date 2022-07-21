@@ -28,77 +28,14 @@
       <h3>WHAT OTHERS HAVE SAID ABOUT ME</h3>
     </div>
     <div id="card-holder" class="row justify-content-evenly">
-      <div class="card col-md-3 p-3 d-flex justify-content-between mt-2">
-        <div class="testimonial image d-flex justify-content-center pb-2">
-          <img
-            src="https://i.postimg.cc/TwGvGPPz/2021-team-jason-wandrag.jpg"
-            class="rounded-circle"
-            style="width: 150px"
-            alt="jason"
-          />
-        </div>
-
-        <p>
-          "In the short time that I have known Carla, she has continuously
-          surprised and impressed me. Carla is a natural born leader and has
-          quickly become someone that her peers look up to. Carla is also very
-          dedicated, both to her colleagues as well as her studies. Carla has
-          proven to be an absolute powerhouse of talent and I cannot wait to see
-          the heights to which she soars!"
-        </p>
-        <h5 class="fst-italic d-flex justify-content-end">
-          Jason Wandrag - Lecturer
-        </h5>
-      </div>
-      <div class="card col-md-3 p-3 d-flex justify-content-between mt-2">
-        <div class="testimonial image d-flex justify-content-center pb-2">
-          <img
-            src="https://i.postimg.cc/bw27tnSX/Jesse-2.jpg"
-            class="rounded-circle"
-            style="width: 150px"
-            alt="jesse"
-          />
-        </div>
-
-        <p class="text-light">
-          "Carla Amy Lawrence is an excellent web developer. Carla is clearly
-          focused on self progression, she is definitely not the type of person
-          to associate her self with anything mediocre. Her kind personality
-          combined with her determined work ethic makes her an absolute pleasure
-          to have around in the work environment"
-        </p>
-        <h5 class="fst-italic d-flex justify-content-end">
-          Jesse Spence - Colleague
-        </h5>
-      </div>
-      <div class="card col-md-3 p-3 d-flex justify-content-between mt-2">
-        <div class="testimonial image d-flex justify-content-center pb-2">
-          <img
-            src="https://i.postimg.cc/zfZ9SfTy/Emile.jpg"
-            class="rounded-circle"
-            style="width: 150px"
-            alt="emile"
-          />
-        </div>
-
-        <p>
-          "Carla, busting with potential, great initiative and a great
-          personality with a can do spirt. When responsibly comes her way she
-          takes charge. Being elected as a team rep she has shown prowess in
-          working in a team and communicating effectively to plan projects and
-          events. A insider with a outside perspective, with those skills she
-          would be a asset to any team and with her work ethic and drive she's
-          assured for success"
-        </p>
-        <h5 class="fst-italic d-flex justify-content-end">
-          Emile Van Wyk - Colleague
-        </h5>
-      </div>
+      <TestCard v-for="test of testimonials" :key="test.message" :test="test" />
     </div>
   </div>
 </template>
 <script>
 import ResumeCard from "../components/ResumeCard.vue";
+import TestCard from "../components/TestCard.vue";
+
 export default {
   data() {
     return {
@@ -140,27 +77,61 @@ export default {
           list: "Managed a switchboard and mailing system // Filing of invoices // Stock control and product logistics",
         },
       ],
-      testimonials: [{}],
+      testimonials: [
+        {
+          message:
+            "In the short time that I have known Carla, she has continuously surprised and impressed me. Carla is a natural born leader and has quickly become someone that her peers look up to. Carla is also very dedicated, both to her colleagues as well as her studies. Carla has proven to be an absolute powerhouse of talent and I cannot wait to see the heights to which she soars!",
+          person: "Jason Wandrag - Lecturer",
+          img: "https://i.postimg.cc/TwGvGPPz/2021-team-jason-wandrag.jpg",
+        },
+        {
+          message:
+            "Carla Amy Lawrence is an excellent web developer. Carla is clearly focused on self progression, she is definitely not the type of person to associate her self with anything mediocre. Her kind personality combined with her determined work ethic makes her an absolute pleasure to have around in the work environment",
+          person: "Jesse Spence - Colleague",
+          img: "https://i.postimg.cc/bw27tnSX/Jesse-2.jpg",
+        },
+        {
+          message:
+            "Carla, busting with potential, great initiative and a great personality with a can do spirt. When responsibly comes her way she takes charge. Being elected as a team rep she has shown prowess in working in a team and communicating effectively to plan projects and events. A insider with a outside perspective, with those skills she would be a asset to any team and with her work ethic and drive she is assured for success",
+          person: "Emile Van Wyk - Colleague",
+          img: "https://i.postimg.cc/zfZ9SfTy/Emile.jpg",
+        },
+        {
+          message:
+            "Carla is the perfect example of a leader. She has an exceptional learning agility and her integrity is to be admired. Carla has always gone above and beyond to achieve anything she puts her mind to.  I would personally recommend her , as she would add exceptional value to any workplace she enters.",
+          person: "Fatima Galant - Colleague",
+          img: "https://i.postimg.cc/52ZZvMSm/Copy-of-Fatima-1.jpg",
+        },
+        {
+          message:
+            "In the short time that I have known Carla, she has continuously surprised and impressed me. Carla is a natural born leader and has quickly become someone that her peers look up to. Carla is also very dedicated, both to her colleagues as well as her studies. Carla has proven to be an absolute powerhouse of talent and I cannot wait to see the heights to which she soars!",
+          person: "Jason Wandrag - Lecturer",
+          img: "https://i.postimg.cc/TwGvGPPz/2021-team-jason-wandrag.jpg",
+        },
+        {
+          message:
+            "In the short time that I have known Carla, she has continuously surprised and impressed me. Carla is a natural born leader and has quickly become someone that her peers look up to. Carla is also very dedicated, both to her colleagues as well as her studies. Carla has proven to be an absolute powerhouse of talent and I cannot wait to see the heights to which she soars!",
+          person: "Jason Wandrag - Lecturer",
+          img: "https://i.postimg.cc/TwGvGPPz/2021-team-jason-wandrag.jpg",
+        },
+      ],
     };
   },
 
-  components: { ResumeCard },
+  components: { ResumeCard, TestCard },
 };
 </script>
-<style scoped>
+<style>
 p {
-  color: white;
+  color: var(--color1);
   text-align: justify;
   text-justify: inter-word;
 }
-h5 {
-  color: #75dab4;
-  font-family: "Fjalla One", sans-serif;
+
+.test-card {
+  background-color: var(--background-color);
 }
-.card {
-  background-color: black;
-}
-.card:hover {
+.test-card:hover {
   transform: scale();
   box-shadow: #75dab4 2px 1px 8px;
 }
@@ -172,7 +143,7 @@ h5 {
 .experiences .resume-card {
   width: 50%;
   padding: 10px;
-  color: white;
+  color: var(--color1);
 }
 .experiences .resume-card:nth-child(odd) {
   text-align: end;
@@ -185,7 +156,6 @@ h5 {
   .experiences .resume-card {
     width: 100%;
     padding: 10px;
-    color: white;
   }
   .experiences .resume-card:nth-child(odd) {
     text-align: center;

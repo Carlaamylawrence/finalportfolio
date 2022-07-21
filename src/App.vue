@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
 }
 
-p {
+text {
   color: var(--color1);
   text-shadow: rgb(49, 49, 49) 5px 4px 10px;
 }
