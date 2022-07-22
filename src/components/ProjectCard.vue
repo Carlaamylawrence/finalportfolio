@@ -1,5 +1,5 @@
 <template>
-  <div class="card col-lg-5 col-md-3 flex-shrink-1 m-4">
+  <div class="card col-lg-5 col-md-3 d-flex justify-content-evenly m-4">
     <img v-bind:src="project.img" class="" />
     <div class="title">
       <p>{{ project.title }}</p>
@@ -61,5 +61,9 @@ export default {
   color: var(--color3);
   font-size: 1rem;
   text-shadow: rgb(141, 141, 141) 5px 4px 10px;
+}
+.title {
+  display: flex;
+  justify-content: center;
 }
 </style>
