@@ -31,6 +31,9 @@
           </div>
         </form>
       </div>
+      <div class="onMobile">
+        <h4>CLICK ON A PROJECT FOR DETAILS</h4>
+      </div>
 
       <ProjectCard
         v-for="project of filteredProjects"
@@ -184,5 +187,16 @@ export default {
   opacity: 0;
   position: fixed;
   width: 0;
+}
+.onMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+@media only screen and (max-width: 600px) {
+  .onMobile {
+    opacity: 1;
+  }
 }
 </style>

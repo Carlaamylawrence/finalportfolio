@@ -8,7 +8,7 @@
         </div>
       </div>
       <div
-        class="about-container d-flex flex-column justify-content-center align-items-center p-5"
+        class="about-container d-flex flex-column justify-content-center align-items-center"
       >
         <div class="about-text text-justify">
           <div

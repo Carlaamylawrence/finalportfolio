@@ -1,9 +1,7 @@
 <template>
   <div class="card col-lg-5 col-md-3 flex-shrink-1 m-4">
-    <img v-bind:src="project.img" />
-    <div
-      class="title d-flex justify-content-center align-items-center text-light"
-    >
+    <img v-bind:src="project.img" class="" />
+    <div class="title">
       <p>{{ project.title }}</p>
     </div>
     <div class="project-details">
@@ -42,7 +40,6 @@ export default {
     rgba(0, 0, 0, 0.4) 100%
   );
   border-radius: 0%;
-
   position: absolute;
   top: 0;
   left: 0;

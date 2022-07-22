@@ -96,6 +96,9 @@ h1 {
   text-decoration: none;
 }
 @media only screen and (max-width: 600px) {
+  .heading {
+    margin-left: -120px;
+  }
   .main-title {
     font-size: 3rem;
     transition: all ease 0.3s;

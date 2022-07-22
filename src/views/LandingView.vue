@@ -2,8 +2,8 @@
   <section id="landing" class="row d-flex">
     <div class="container p-5 d-flex flex-column col-lg-7">
       <div class="title m-5">
-        <h1 class="animate__bounceInRight">CARLA AMY LAWRENCE</h1>
-        <h3 class="subtitle">NEED A WEB DEVELOPER?</h3>
+        <h1 class="landingMain">CARLA AMY LAWRENCE</h1>
+        <h3 class="landingSub">NEED A WEB DEVELOPER?</h3>
         <div class="wrapper text-center d-flex">
           <a
             href="https://www.linkedin.com/in/carla-amy-lawrence-807277225/"
@@ -76,15 +76,6 @@ export default {};
   margin-top: 2rem;
 }
 
-.subtitle {
-  color: #8fd8cc;
-  font-family: "Barlow Condensed", sans-serif;
-}
-
-.title {
-  padding-top: 20%;
-}
-
 .wrapper .icon {
   position: relative;
   background-color: #aeaeae21;
@@ -99,7 +90,7 @@ export default {};
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  color: #333;
+  color: rgb(84, 84, 84);
   text-decoration: none;
 }
 .wrapper .tooltip {
@@ -160,5 +151,11 @@ export default {};
 .wrapper .github:hover .tooltip::before {
   background-color: #333333;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper .icon {
+    margin: 0;
+  }
 }
 </style>

@@ -1,14 +1,16 @@
 <template>
   <section id="contact">
-    <div class="container-fluid p-5">
+    <div class="container p-5">
       <div class="heading d-flex justify-content-center mt-5">
         <div class="section-title">
           <h1 class="main-title">CONTACT</h1>
           <h4 class="subtitle">LET"S CONNECT</h4>
         </div>
       </div>
-      <div class="contact container-fluid shadow-sm m-4 p-5 pb-5">
-        <div class="row d-flex flex-wrap justify-content-between">
+      <div class="contact container-fluid shadow-sm">
+        <div
+          class="contact-header row d-flex flex-wrap justify-content-between align-items-center"
+        >
           <div class="col-lg-6">
             <h3>SAY HELLO</h3>
           </div>
@@ -21,13 +23,13 @@
             <p>076 719 4703</p>
           </div>
         </div>
-        <div class="row d-flex flex-wrap">
+        <div class="form-row d-flex flex-wrap px-5">
           <div class="col-lg-5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26466.67435590388!2d18.453872446775385!3d-33.98394620995498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc42c52081a7cb%3A0x79fbdc90a0e82eac!2sClaremont%2C%20Cape%20Town%2C%207708!5e0!3m2!1sen!2sza!4v1652185087093!5m2!1sen!2sza"
               style="border: 0; width: 100%; height: 100%"
               allowfullscreen=""
-              loading="lazy"
+              loading="eager"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
@@ -73,9 +75,11 @@
                   ></textarea>
                   <label for="floatingTextarea">Message</label>
                 </div>
-                <button type="submit" class="btn btn-outline-dark blue">
-                  SEND
-                </button>
+                <div
+                  class="send d-flex justify-content-center align-items-center"
+                >
+                  <button type="submit" class="btn">SEND</button>
+                </div>
               </form>
             </div>
           </div>
@@ -87,4 +91,15 @@
 <script>
 export default {};
 </script>
-<style></style>
+<style>
+@media screen and (max-width: 700px) {
+  .about-header {
+    justify-content: center;
+    align-items: center;
+  }
+  .form-row {
+    justify-content: center;
+    align-items: center;
+  }
+}
+</style>
