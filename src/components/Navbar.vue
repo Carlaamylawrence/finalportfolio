@@ -1,24 +1,25 @@
 <template>
   <nav id="navbar" :class="{ active: isActive }">
     <ul class="nav-links">
-      <li class="nav-link"><router-link to="/">HOME</router-link></li>
-      <li class="nav-link"><router-link to="/about">ABOUT</router-link></li>
-      <li class="nav-link"><router-link to="/resume">RESUME</router-link></li>
-      <li class="nav-link">
+      <li class="nav-link" @click="toggleNav()" ><router-link to="/" >HOME</router-link></li>
+      <li class="nav-link" @click="toggleNav()" ><router-link to="/about">ABOUT</router-link></li>
+      <li class="nav-link" @click="toggleNav()" ><router-link to="/resume">RESUME</router-link></li>
+      <li class="nav-link" @click="toggleNav()" >
         <router-link to="/projects">PROJECTS</router-link>
       </li>
-      <li class="nav-link">
+      <li class="nav-link" @click="toggleNav()" >
         <router-link to="/contact">CONTACT</router-link>
       </li>
-      <li>
+      <li class>
         <i
-          class="dark d-flex align-content-center fa-solid fa-moon"
-          @click="changeTheme"
+          class="dark d-flex align-items-center mt-3 fa-solid fa-moon"
+          @click="changeTheme" 
+          
         ></i>
       </li>
     </ul>
   </nav>
-  <button id="toggler" @click="toggleNav()">menu</button>
+ <i id="toggler" @click="toggleNav()" class="fa-solid fa-bars"></i>
 </template>
 <script>
 setInterval(() => {
@@ -97,6 +98,8 @@ nav {
 
 .dark {
   border: none;
+  font-size:2rem;
+  color: var(--color1);
 }
 
 #toggler {
@@ -104,12 +107,13 @@ nav {
   top: 20px;
   right: 20px;
   display: none;
+  color:var(--color2);
 }
 
 @media screen and (max-width: 768px) {
   .nav-links {
     flex-direction: column;
-    height: 100vh;
+    height: 130vh;
     align-items: center;
     z-index: 10;
   }

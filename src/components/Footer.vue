@@ -1,30 +1,29 @@
 <template>
   <footer
     id="footer"
-    class="text-dark d-flex flex-column justify-content-center align-content-center"
+    
   >
-    <div
-      class="container-fluid p-2 d-flex flex-column justify-content-center align-content-center"
-    >
-      <div class="footer-text pb-3">
-        <h3>LET'S TALK ABOUT YOUR PROJECT</h3>
-        <h4>COLLAB? CONNECT? CREATE?</h4>
-
-        <a href="#contact"
-          ><button type="button" class="btn btn-outline-dark">
-            GET IN TOUCH
-          </button></a
-        >
+    <div class="container-fluid">
+      <div class="top-footer p-5  ">
+        <div class="footer-text  d-flex flex-column  align-items-center ">
+          <h3>LET'S TALK ABOUT YOUR PROJECT</h3>
+          <h4>COLLAB? CONNECT? CREATE?</h4>
+          <router-link to="/contact"><button type="button" class="btn ">
+              GET IN TOUCH<i class="fa-solid fa-arrow-right-long"></i>
+            </button></router-link
+          >
+        </div>
       </div>
+  
 
       <div class="bottom-footer">
-        <div class="d-flex justify-content-evenly">
+        <div class="d-flex justify-content-evenly pb-2">
           <div class="copyright">
-            <small>© 2022 Copyright</small>
+            <small class="footerp">© 2022 Copyright</small>
           </div>
 
           <div class="design">
-            <small>Designed by Carla Amy Lawrence</small>
+            <small class="footerp">Designed by Carla Amy Lawrence</small>
           </div>
         </div>
       </div>
@@ -45,10 +44,15 @@ export default {};
   /* display: flex;
   flex-direction: column;
   align-content: flex-end; */
-  position: sticky;
+  /* position: sticky; */
   bottom: 0;
   height: 100px;
   width: 100%;
   z-index: 10;
 }
+
+.footerp{
+  color:var(--color3)
+}
+
 </style>

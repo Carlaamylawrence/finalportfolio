@@ -44,8 +44,12 @@ h5 {
   color: var(--color2);
   font-family: "Fjalla One", sans-serif;
 }
+
+h1{
+  
+}
 .main-title {
-  font-size: 8rem;
+  font-size: 7rem;
   z-index: 2;
   color: var(--color3);
   text-shadow: 0px 0px 2px black;
@@ -69,7 +73,33 @@ h5 {
   /*   background: white; */
   padding: 2px;
 }
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
 
+  color: var(--color1);
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #7ad6bc 3px;
+  text-decoration: none !important;
+}
+
+.btn:hover {
+  background: #75dab4;
+  color: var(--color1);
+  background-image: -webkit-linear-gradient(top, #75dab4, #75dab4);
+  background-image: -moz-linear-gradient(top, #75dab4, #75dab4);
+  background-image: -ms-linear-gradient(top, #75dab4, #75dab4);
+  background-image: -o-linear-gradient(top, #75dab4, #75dab4);
+  background-image: linear-gradient(to bottom, #75dab4, #75dab4);
+  text-decoration: none;
+}
 @media only screen and (max-width: 600px) {
+  .main-title {
+  font-size: 3rem;
+ transition: all ease 0.3s;
+}
 }
 </style>
