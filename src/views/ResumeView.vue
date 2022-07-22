@@ -7,13 +7,13 @@
         <h4 class="subtitle">ASPIRING WEB DEVELOPER</h4>
       </div>
     </div>
-    <div
+    <!-- <div
       class="d-flex flex-column justify-content-center align-items-center mb-2"
     >
       <a href="../assets/cv/cv.pdf" download="cv PDF"
         ><button class="btn btn-outline-light">DOWNLOAD CV</button></a
       >
-    </div>
+    </div> -->
     <div class="experiences">
       <ResumeCard
         v-for="resume of experience"
@@ -24,14 +24,17 @@
   </div>
 
   <!-- TESTIMONIALS -->
-  <div id="testimonials" class="container mt-3 p-5 mb-4">
+  <div
+    class="test-header d-flex flex-column justify-content-center align-items-center"
+  >
+    <h2 class="">TESTIMONIALS</h2>
+    <h3 class="text-center">WHAT OTHERS HAVE SAID ABOUT ME</h3>
+  </div>
+  <div id="testimonials" class="container px-5 mb-4">
     <div
       class="section-title d-flex flex-column justify-content-center align-items-center mb-2 p-5"
-    >
-      <h2>TESTIMONIALS</h2>
-      <h3 class="text-center">WHAT OTHERS HAVE SAID ABOUT ME</h3>
-    </div>
-    <div id="card-holder" class="row justify-content-evenly">
+    ></div>
+    <div id="card-holder" class="row justify-content-evenly gap-1">
       <TestCard v-for="test of testimonials" :key="test.message" :test="test" />
     </div>
   </div>
@@ -136,7 +139,6 @@ p {
   background-color: var(--background-color);
 }
 .test-card:hover {
-  transform: scale();
   box-shadow: #75dab4 2px 1px 8px;
 }
 

@@ -29,9 +29,11 @@ export default {
 </script>
 <style>
 .card {
-  background-color: white;
+  background-color: var(--background-color);
   border-radius: 0%;
   box-shadow: grey 0px -2px 9px;
+  max-width: 400px;
+  min-height: 300px;
 }
 .project-details {
   background: linear-gradient(
@@ -59,7 +61,8 @@ export default {
   opacity: 1;
 }
 .card p {
-  color: var(--color1);
+  color: var(--color3);
+  font-size: 1rem;
   text-shadow: rgb(141, 141, 141) 5px 4px 10px;
 }
 </style>

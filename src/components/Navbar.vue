@@ -1,25 +1,30 @@
 <template>
   <nav id="navbar" :class="{ active: isActive }">
     <ul class="nav-links">
-      <li class="nav-link" @click="toggleNav()" ><router-link to="/" >HOME</router-link></li>
-      <li class="nav-link" @click="toggleNav()" ><router-link to="/about">ABOUT</router-link></li>
-      <li class="nav-link" @click="toggleNav()" ><router-link to="/resume">RESUME</router-link></li>
-      <li class="nav-link" @click="toggleNav()" >
+      <li class="nav-link" @click="toggleNav()">
+        <router-link to="/">HOME</router-link>
+      </li>
+      <li class="nav-link" @click="toggleNav()">
+        <router-link to="/about">ABOUT</router-link>
+      </li>
+      <li class="nav-link" @click="toggleNav()">
+        <router-link to="/resume">RESUME</router-link>
+      </li>
+      <li class="nav-link" @click="toggleNav()">
         <router-link to="/projects">PROJECTS</router-link>
       </li>
-      <li class="nav-link" @click="toggleNav()" >
+      <li class="nav-link" @click="toggleNav()">
         <router-link to="/contact">CONTACT</router-link>
       </li>
       <li class>
         <i
           class="dark d-flex align-items-center mt-3 fa-solid fa-moon"
-          @click="changeTheme" 
-          
+          @click="changeTheme"
         ></i>
       </li>
     </ul>
   </nav>
- <i id="toggler" @click="toggleNav()" class="fa-solid fa-bars"></i>
+  <i id="toggler" @click="toggleNav()" class="fa-solid fa-bars"></i>
 </template>
 <script>
 setInterval(() => {
@@ -98,7 +103,7 @@ nav {
 
 .dark {
   border: none;
-  font-size:2rem;
+  font-size: 2rem;
   color: var(--color1);
 }
 
@@ -107,13 +112,13 @@ nav {
   top: 20px;
   right: 20px;
   display: none;
-  color:var(--color2);
+  color: var(--color2);
 }
 
 @media screen and (max-width: 768px) {
   .nav-links {
     flex-direction: column;
-    height: 130vh;
+
     align-items: center;
     z-index: 10;
   }
@@ -126,7 +131,13 @@ nav {
 
   #navbar.active {
     top: 0;
+    height: 100%;
   }
+
+  #navbar.active .nav-links {
+    align-items: center;
+  }
+
   #navbar.active,
   nav {
     background-color: black;

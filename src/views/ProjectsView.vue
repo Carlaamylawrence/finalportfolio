@@ -146,6 +146,18 @@ export default {
           github: "https://github.com/Carlaamylawrence/gym",
           live: "https://hugegym.netlify.app",
         },
+        {
+          id: 9,
+          title: "Online book library",
+          desc: "A digital library for users to create, edit and download pdf versions of books",
+          stack: "Vue",
+          objective: "Using VueX store",
+          img: "https://i.postimg.cc/7LkRMdZr/Screenshot-2022-07-22-133214.png",
+          img_alt: "bookdom",
+          github:
+            "https://github.com/AbuBakrKhan24/BookShop/tree/Abu-new-stuff",
+          live: "",
+        },
       ],
       stack: "all",
     };

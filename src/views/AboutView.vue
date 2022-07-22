@@ -83,7 +83,7 @@
         <div
           class="skills-title d-flex d-flex justify-content-center align-items-center"
         >
-          <h1 class="mt-4">TECH STACK</h1>
+          <h3 class="mt-3">TECH STACK</h3>
         </div>
         <div
           class="skills-display row d-flex flex-wrap justify-content-center align-items-center p-5"

@@ -2,7 +2,7 @@
   <section id="landing" class="row d-flex">
     <div class="container p-5 d-flex flex-column col-lg-7">
       <div class="title m-5">
-        <h1>CARLA AMY LAWRENCE</h1>
+        <h1 class="animate__bounceInRight">CARLA AMY LAWRENCE</h1>
         <h3 class="subtitle">NEED A WEB DEVELOPER?</h3>
         <div class="wrapper text-center d-flex">
           <a
