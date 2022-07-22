@@ -12,10 +12,21 @@
       </div>
       <div class="filter d-flex justify-content-center">
         <form>
-          <input v-model="stack" type="radio" value="all" />ALL
-          <input v-model="stack" type="radio" value="CSS" />CSS
-          <input v-model="stack" type="radio" value="JS" />JAVASCRIPT
-          <input v-model="stack" type="radio" value="Vue" />VUE
+          <div class="radio-toolbar">
+            <input v-model="stack" type="radio" id="all" value="all" /><label
+              for="all"
+              >ALL</label
+            >
+
+            <input v-model="stack" type="radio" id="CSS" value="CSS" /><label
+              for="CSS"
+              >CSS</label
+            >
+            <input v-model="stack" type="radio" id="JS" value="JS" />
+            <label for="JS">JAVASCRIPT</label>
+            <input v-model="stack" type="radio" id="VUE" value="Vue" />
+            <label for="VUE">VUE</label>
+          </div>
         </form>
       </div>
 
@@ -139,4 +150,24 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+.radio-toolbar label {
+  display: inline-block;
+  background-color: var(--color1);
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  margin: 1rem;
+}
+.radio-toolbar label:hover {
+  background-color: var(--color2);
+
+  border: 1px solid var(--color2);
+}
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+</style>
