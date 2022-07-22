@@ -45,8 +45,7 @@ h5 {
   font-family: "Fjalla One", sans-serif;
 }
 
-h1{
-  
+h1 {
 }
 .main-title {
   font-size: 7rem;
@@ -98,8 +97,11 @@ h1{
 }
 @media only screen and (max-width: 600px) {
   .main-title {
-  font-size: 3rem;
- transition: all ease 0.3s;
-}
+    font-size: 3rem;
+    transition: all ease 0.3s;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
 }
 </style>

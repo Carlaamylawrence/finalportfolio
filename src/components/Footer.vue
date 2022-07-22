@@ -1,20 +1,16 @@
 <template>
-  <footer
-    id="footer"
-    
-  >
+  <footer id="footer">
     <div class="container-fluid">
-      <div class="top-footer p-5  ">
-        <div class="footer-text  d-flex flex-column  align-items-center ">
+      <div class="top-footer p-5">
+        <div class="footer-text d-flex flex-column align-items-center">
           <h3>LET'S TALK ABOUT YOUR PROJECT</h3>
           <h4>COLLAB? CONNECT? CREATE?</h4>
-          <router-link to="/contact"><button type="button" class="btn ">
-              GET IN TOUCH<i class="fa-solid fa-arrow-right-long"></i>
-            </button></router-link
-          >
+          <router-link to="/contact"
+            ><button type="button" class="btn">
+              GET IN TOUCH<i class="fa-solid fa-arrow-right-long"></i></button
+          ></router-link>
         </div>
       </div>
-  
 
       <div class="bottom-footer">
         <div class="d-flex justify-content-evenly pb-2">
@@ -51,8 +47,7 @@ export default {};
   z-index: 10;
 }
 
-.footerp{
-  color:var(--color3)
+.footerp {
+  color: var(--color3);
 }
-
 </style>

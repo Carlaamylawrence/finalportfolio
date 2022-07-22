@@ -127,7 +127,7 @@ export default {
 </script>
 <style>
 p {
-  color: var(--color1);
+  color: var(--color3);
   text-align: justify;
   text-justify: inter-word;
 }

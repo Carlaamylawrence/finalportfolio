@@ -12,7 +12,9 @@
       </div>
       <div class="filter d-flex justify-content-center">
         <form>
-          <div class="radio-toolbar">
+          <div
+            class="radio-toolbar d-flex flex-wrap justify-content-center align-items-center"
+          >
             <input v-model="stack" type="radio" id="all" value="all" /><label
               for="all"
               >ALL</label
