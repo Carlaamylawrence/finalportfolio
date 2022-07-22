@@ -42,7 +42,8 @@
                     class="form-control"
                     id="floatingName"
                     placeholder="FullName"
-                    name="floatingName"
+                    name="Fullname"
+                    required
                   />
                   <label for="floatingName">Full Name</label>
                 </div>
@@ -52,7 +53,8 @@
                     class="form-control"
                     id="floatingTel"
                     placeholder="Number"
-                    name="floatingTel"
+                    name="number"
+                    required
                   />
                   <label for="floatingPassword">Contact Number</label>
                 </div>
@@ -62,7 +64,8 @@
                     class="form-control"
                     id="floatingInput"
                     placeholder="name@example.com"
-                    name="floatingInput"
+                    name="email"
+                    required
                   />
                   <label for="floatingInput">Email address</label>
                 </div>
@@ -71,7 +74,8 @@
                     class="form-control"
                     placeholder="Leaveacommenthere"
                     id="floatingTextarea"
-                    name="floatingTextarea"
+                    name="message"
+                    required
                   ></textarea>
                   <label for="floatingTextarea">Message</label>
                 </div>
