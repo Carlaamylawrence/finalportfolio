@@ -26,10 +26,10 @@
   <!-- TESTIMONIALS -->
   <div id="testimonials" class="container mt-3 p-5 mb-4">
     <div
-      class="section-title d-flex flex-column justify-content-center align-items-center mb-2"
+      class="section-title d-flex flex-column justify-content-center align-items-center mb-2 p-5"
     >
-      <h1>TESTIMONIALS</h1>
-      <h3>WHAT OTHERS HAVE SAID ABOUT ME</h3>
+      <h2>TESTIMONIALS</h2>
+      <h3 class="text-center">WHAT OTHERS HAVE SAID ABOUT ME</h3>
     </div>
     <div id="card-holder" class="row justify-content-evenly">
       <TestCard v-for="test of testimonials" :key="test.message" :test="test" />
@@ -159,6 +159,14 @@ p {
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 4rem;
+  }
+  .experiences .resume-card:nth-child(odd) {
+    align-items: center;
+    width: 100%;
+  }
+  .experiences .resume-card:nth-child(even) {
+    align-items: center;
+    width: 100%;
   }
 }
 </style>

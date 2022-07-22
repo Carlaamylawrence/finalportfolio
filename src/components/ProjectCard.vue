@@ -11,11 +11,13 @@
       <p>{{ project.desc }}</p>
       <div class="project-links d-flex justify-center-around">
         <a :href="project.live" target="_blank"
-          ><button class="btn btn-outline-light">LIVE</button></a
-        >
+          ><button class="btn">
+            LIVE <i class="fa-solid fa-chevron-right"></i></button
+        ></a>
         <a :href="project.github" target="_blank"
-          ><button class="btn btn-outline-light">GITHUB</button></a
-        >
+          ><button class="btn">
+            GITHUB <i class="fa-solid fa-chevron-right"></i></button
+        ></a>
       </div>
     </div>
   </div>
@@ -25,7 +27,7 @@ export default {
   props: ["project"],
 };
 </script>
-<style scoped>
+<style>
 .card {
   background-color: white;
   border-radius: 0%;
@@ -34,11 +36,11 @@ export default {
 .project-details {
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.84) 0%,
+    rgba(77, 77, 77, 0.84) 0%,
     rgba(0, 0, 0, 0.4) 100%
   );
   border-radius: 0%;
-  color: white;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -56,8 +58,8 @@ export default {
 .card:hover .project-details {
   opacity: 1;
 }
-p {
-  color: white;
-  text-shadow: rgb(49, 49, 49) 5px 4px 10px;
+.card p {
+  color: var(--color1);
+  text-shadow: rgb(141, 141, 141) 5px 4px 10px;
 }
 </style>

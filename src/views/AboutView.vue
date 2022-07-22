@@ -46,7 +46,7 @@
       <h3 class="d-flex justify-content-center pb-2 align-content-center">
         WHAT I CAN DO
       </h3>
-      <hr />
+
       <div class="skillset d-flex flex-wrap justify-content-center gap-4">
         <div class="designcards d-flex flex-column align-content-center">
           <div class="design-icon"><i class="fa-solid fa-pen-ruler"></i></div>
@@ -239,11 +239,7 @@
 .fa-brands {
   font-size: 4rem;
 }
-hr {
-  color: var(--color2);
-  width: 10%;
-  height: 2px;
-}
+
 .designcards {
   min-height: 200px;
   min-width: 200px;

@@ -155,7 +155,8 @@ export default {
 <style>
 .radio-toolbar label {
   display: inline-block;
-  background-color: var(--color1);
+  background-color: --color1;
+  color: var(--color3);
   padding: 5px 10px;
   font-size: 16px;
   border: 1px solid #444;

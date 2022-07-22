@@ -3,8 +3,8 @@
     <div class="container-fluid">
       <div class="top-footer p-5">
         <div class="footer-text d-flex flex-column align-items-center">
-          <h3>LET'S TALK ABOUT YOUR PROJECT</h3>
-          <h4>COLLAB? CONNECT? CREATE?</h4>
+          <h3 class="text-center">LET'S TALK ABOUT YOUR PROJECT</h3>
+          <h4 class="text-center">COLLAB? CONNECT? CREATE?</h4>
           <router-link to="/contact"
             ><button type="button" class="btn">
               GET IN TOUCH<i class="fa-solid fa-arrow-right-long"></i></button
