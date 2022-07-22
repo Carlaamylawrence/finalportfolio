@@ -79,7 +79,7 @@ h1 {
 
   color: var(--color1);
   font-size: 20px;
-  background: #ffffff;
+  background-color: var(--background-color);
   padding: 10px 20px 10px 20px;
   border: solid #7ad6bc 3px;
   text-decoration: none !important;
