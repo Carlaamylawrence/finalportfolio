@@ -1,6 +1,6 @@
 <template>
   <section id="landing" class="row d-flex">
-    <div class="container p-5 d-flex flex-column col-lg-7">
+    <div class="container p-5 d-flex flex-column align-items-center">
       <div class="title m-5">
         <h1 class="landingMain">CARLA AMY LAWRENCE</h1>
         <h3 class="landingSub">NEED A WEB DEVELOPER?</h3>
@@ -65,6 +65,13 @@ export default {};
     url(../assets/land4.jpg);
   background-position: center;
   background-size: cover;
+}
+.landingMain{
+  font-size: 11vw;
+  text-shadow: #525151 1px 2px 8px ;
+}
+.landingSub{
+  text-shadow: #525151 1px 2px 8px ;
 }
 .container {
   height: 90vh;

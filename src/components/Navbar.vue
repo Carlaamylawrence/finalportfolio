@@ -104,7 +104,7 @@ nav {
 .dark {
   border: none;
   font-size: 2rem;
-  color: var(--color1);
+  color: var(--color2);
 }
 
 #toggler {

@@ -48,9 +48,9 @@
       </h3>
 
       <div class="skillset d-flex flex-wrap justify-content-center gap-4">
-        <div class="designcards d-flex flex-column align-content-center">
+        <div class="designcards d-flex flex-column align-items-center">
           <div class="design-icon"><i class="fa-solid fa-pen-ruler"></i></div>
-          <div class="design-text">
+          <div class="design-text tex-center">
             <ul>
               <li>Update/edit/add content</li>
               <li>Customise the look of your site</li>
@@ -83,10 +83,10 @@
         <div
           class="skills-title d-flex d-flex justify-content-center align-items-center"
         >
-          <h3 class="mt-3">TECH STACK</h3>
+          <h3 class="mt-4">TECH STACK</h3>
         </div>
         <div
-          class="skills-display row d-flex flex-wrap justify-content-center align-items-center p-5"
+          class="skills-display row d-flex flex-wrap justify-content-center align-items-center px-5"
         >
           <div
             class="skills-info aboutCard-container d-flex justify-content-center align-items-center col-md-3 g-1"
@@ -263,6 +263,7 @@
 }
 .design-text ul {
   list-style: none;
+  padding-left:0;
 }
 .design-text ul li {
   color: var(--color3);
