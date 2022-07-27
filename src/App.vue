@@ -76,7 +76,7 @@ p {
   transform: translatey(-50%);
   /*   background: white; */
   padding: 2px;
-  text-shadow: #525151 1px 2px 8px ;
+  text-shadow: #525151 1px 2px 8px;
 }
 .btn {
   -webkit-border-radius: 4;
