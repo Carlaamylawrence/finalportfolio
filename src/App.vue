@@ -76,15 +76,16 @@ p {
   transform: translatey(-50%);
   /*   background: white; */
   padding: 2px;
+  text-shadow: #525151 1px 2px 8px ;
 }
 .btn {
   -webkit-border-radius: 4;
   -moz-border-radius: 4;
   border-radius: 4px;
 
-  color: var(--color1);
+  color: var(color2) !important;
   font-size: 20px;
-  background-color: var(--background-color);
+  background-color: #75dab4;
   padding: 10px 20px 10px 20px;
   border: solid #7ad6bc 3px;
   text-decoration: none !important;
