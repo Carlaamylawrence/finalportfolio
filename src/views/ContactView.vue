@@ -4,7 +4,7 @@
       <div class="heading d-flex justify-content-center mt-5">
         <div class="section-title">
           <h1 class="main-title">CONTACT</h1>
-          <h4 class="subtitle">LET"S CONNECT</h4>
+          <h4 class="subtitle">LET'S CONNECT</h4>
         </div>
       </div>
       <div class="contact container-fluid shadow-sm">
@@ -16,7 +16,7 @@
           </div>
           <div class="col-lg-3">
             <h5>LOCATION</h5>
-            <p>Cape Town, South AFrica</p>
+            <p>Cape Town, South Africa</p>
           </div>
           <div class="col-lg-3">
             <h5>REACH ME</h5>

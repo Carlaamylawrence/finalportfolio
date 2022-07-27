@@ -68,15 +68,15 @@ p {
 .subtitle {
   position: absolute;
   white-space: nowrap;
-  text-shadow: 0px 0px 2px rgb(150, 149, 149);
+  /* text-shadow: 0px 0px 2px rgb(150, 149, 149); */
   top: 50%;
   left: 70%;
   margin: 0;
   z-index: 3;
   transform: translatey(-50%);
-  /*   background: white; */
+  background: var(--color1);
   padding: 2px;
-  text-shadow: #525151 1px 2px 8px;
+  /* text-shadow: #525151 1px 2px 8px; */
 }
 .btn {
   -webkit-border-radius: 4;
