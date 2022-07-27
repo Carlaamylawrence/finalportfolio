@@ -60,6 +60,11 @@ h1 {
   /* mix-blend-mode: difference; */
 }
 
+p {
+  color: var(--color3);
+  text-align: justify;
+  text-justify: inter-word;
+}
 .subtitle {
   position: absolute;
   white-space: nowrap;
