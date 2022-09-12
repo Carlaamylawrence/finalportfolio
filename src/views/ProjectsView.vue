@@ -10,6 +10,13 @@
           <h4 class="subtitle">A GLIMPSE AT MY WORK</h4>
         </div>
       </div>
+      <div class="projectInfo d-flex justify-content-center">
+        <h4 class="text-center">
+          These are some of the projects I have created to showcase and practice
+          my skills and languages. Many were small tasks and others are bigger
+          applications with functionality
+        </h4>
+      </div>
       <div class="filter d-flex justify-content-center">
         <form>
           <div
@@ -28,6 +35,8 @@
             <label for="JS">JAVASCRIPT</label>
             <input v-model="stack" type="radio" id="VUE" value="Vue" />
             <label for="VUE">VUE</label>
+            <input v-model="stack" type="radio" id="NODE" value="Node" />
+            <label for="NODE">NODE</label>
           </div>
         </form>
       </div>
@@ -160,6 +169,28 @@ export default {
           github:
             "https://github.com/AbuBakrKhan24/BookShop/tree/Abu-new-stuff",
           live: "",
+        },
+        {
+          id: 10,
+          title: "Jewellery Collection Site",
+          desc: "A digital collection display of bespoke jewels.",
+          stack: "Node",
+          objective: "Hosting on the cloud and having crud functionality",
+          img: "https://i.postimg.cc/1t15rCnh/jewels.png",
+          img_alt: "jewels",
+          github: "https://github.com/Carlaamylawrence/jewels_eomp",
+          live: "https://roaring-dodol-729410.netlify.app/",
+        },
+        {
+          id: 11,
+          title: "DevConnect",
+          desc: "A platform for Devs and potential projects to be displayed ",
+          stack: "Node",
+          objective: "Hosting on the cloud and having crud functionality",
+          img: "https://i.postimg.cc/hvqkYNcg/devconnect.png",
+          img_alt: "devconnect",
+          github: "https://github.com/Carlaamylawrence/devconnectfrontend",
+          live: "https://thedevconnect.netlify.app/",
         },
       ],
       stack: "all",
